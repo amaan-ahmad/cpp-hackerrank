@@ -31,7 +31,7 @@ int main(){
     for(auto i=obj2.begin(); i != obj2.end(); ++i)
         cout << *i << " ";
 
-
-
+    obj1.emplace(obj1.begin()+1, 100);
+    cout << obj1[0];
     return 0;
 }
